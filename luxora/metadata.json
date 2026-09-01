@@ -1,6 +1,0 @@
-{
-  "name": "LUXORA",
-  "description": "High-end luxury fashion and apparel e-commerce experience with editorial aesthetic, smooth animations, and complete shopping suite.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
