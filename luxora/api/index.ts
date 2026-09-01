@@ -1173,10 +1173,6 @@ async function startServer() {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
-// Only start the permanent HTTP server listener if not running in a Vercel serverless runtime
-if (!process.env.VERCEL && process.env.NODE_ENV !== 'test') {
-  startServer();
-}
 
 export default app;
 export { app, startServer };
