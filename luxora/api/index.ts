@@ -1173,13 +1173,6 @@ async function startServer() {
       res.sendFile(path.join(distPath, 'index.html'));
     });
   }
-
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[LUXORA SERVER] Online at http://0.0.0.0:${PORT}`);
-    console.log(`[LUXORA SERVER] Admin Portal available at /spadmin`);
-  });
-}
-
 // Only start the permanent HTTP server listener if not running in a Vercel serverless runtime
 if (!process.env.VERCEL && process.env.NODE_ENV !== 'test') {
   startServer();
